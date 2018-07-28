@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'ReklameScript';
+    font-style: normal;
+    font-weight: normal;
+    src: local('ReklameScript'), url('../font/ReklameScript.otf') format('truetype');
+}
+  
+.wb-font {
+    font-family: 'ReklameScript', serif !important;
+    font-size: 100px !important;
+} 
+.wb-logo-prefix {
+    color: #007fff !important;
+}  
+.wb-logo-sufix {
+    color: black !important;
+}
