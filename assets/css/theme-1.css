@@ -231,8 +231,8 @@ pre code {
 
 .promo .intro {
   font-size: 28px;
-  max-width: 680px;
-  margin: 0 auto;
+  /* max-width: 680px; */
+  margin: 20px auto;  
   margin-bottom: 30px;
 }
 
