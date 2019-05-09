@@ -21,6 +21,12 @@
     <link id="theme-style" rel="stylesheet" href="assets/css/theme-1.css">
     <!-- customized css -->
     <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <!-- lightgallery -->
+    <link rel="stylesheet" href="assets/plugins/lightgallery/css/lg-transitions.min.css">
+    <link rel="stylesheet" href="assets/plugins/lightgallery/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/plugins/lightgallery/css/demo-gallery.css">
+   
     <!-- GitHub Button -->
     <script async defer src="https://buttons.github.io/buttons.js"></script> 
 </head> 
@@ -56,7 +62,7 @@
                     <ul class="nav navbar-nav">
                         <li class="nav-item sr-only"><a class="nav-link scrollto" href="#initial">Home</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="#intro">Introdução</a></li>
-                        <li class="nav-item"><a class="nav-link scrollto" href="#technology">Tecnologias</a></li>                        
+                        <li class="nav-item"><a class="nav-link scrollto" href="#images">Imagens</a></li>                        
                         <li class="nav-item"><a class="nav-link scrollto" href="#docs">Utilização</a></li>
                         <li class="nav-item"><a class="nav-link scrollto" href="#license">Licença</a></li>                        
                         <li class="nav-item last"><a class="nav-link scrollto" href="#author">Autor</a></li>
@@ -162,21 +168,108 @@
                         <p>Acompanhe o fluxo financeiro em tempo real através de gráficos iterativos e resumos simplificados</p>
                     </div>
                 </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Cadastro de Contatos</h3>
+                        <p>Cadastre e vincule contatos (ou clientes) aos movimentos para rastrear despesas com mais detalhes</p>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Diário do Veículo</h3>
+                        <p>Controle despesas com combustível de veículos, visualize a média de consumo e acompanhe os valores gastos</p>
+                    </div>
+                </div>
+                <div class="item col-lg-4 col-md-6 col-12">
+                    <div class="icon-holder">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Utilize no Tablet</h3>
+                        <p>O webBudget é homologado para uso em tablets e/ou dispositivos com resolução mínima de 1152x864</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="technology" class="features section">
+    <section id="images" class="features section">
         <div class="container text-center">
             <h2 class="title">Imagens</h2>
-            <ul class="feature-list list-unstyled">
-                <li><i class="fas fa-check"></i> Wildfly 13</li>
-                <li><i class="fas fa-check"></i> Deltaspike Data + Hibernate</li>
-                <li><i class="fas fa-check"></i> Arquitetura baseada nos frameworks do JavaEE versão 7</li>
-                <li><i class="fas fa-check"></i> Primefaces + Omnifaces + AdminLTE + Bootstrap 3</li>
-                <li><i class="fas fa-check"></i> Homologado para PostgreSQL 9+ ou MySQL 8/MariaDB 10+</li>
-                <li><i class="fas fa-check"></i> Segurança provida pelo <a href="https://github.com/arthurgregorio/shiro-ee">ShiroEE</a>, uma extensão do Apache Shiro</li>
-            </ul>
+            <div class="demo-gallery">
+                <ul id="lightgallery" class="list-unstyled row">
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/1_375.PNG 375, assets/images/prints/1_480.PNG 480, assets/images/prints/1_1516.PNG 1516"
+                        data-src="assets/images/prints/1_1516.PNG" 
+                        data-sub-html="<h4>Centros de Custo</h4><p>Listagem do cadastro de centros de custo</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/1_375.PNG" alt="Thumb-1">
+                        </a>
+                    </li>      
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/2_375.PNG 375, assets/images/prints/2_480.PNG 480, assets/images/prints/2_1516.PNG 1516"
+                        data-src="assets/images/prints/2_1516.PNG" 
+                        data-sub-html="<h4>Classes de Movimento</h4><p>Listagem do cadastro de classes de movimento</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/2_375.PNG" alt="Thumb-2">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/3_375.PNG 375, assets/images/prints/3_480.PNG 480, assets/images/prints/3_1516.PNG 1516"
+                        data-src="assets/images/prints/3_1516.PNG" 
+                        data-sub-html="<h4>Dashboard</h4><p>Dashboard de posição financeira do período em aberto</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/3_375.PNG" alt="Thumb-3">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/4_375.PNG 375, assets/images/prints/4_480.PNG 480, assets/images/prints/4_1516.PNG 1516"
+                        data-src="assets/images/prints/4_1516.PNG" 
+                        data-sub-html="<h4>Fatura do Cartão</h4><p>Detalhamento de faturas de cartão de crédito</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/4_375.PNG" alt="Thumb-4">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/5_375.PNG 375, assets/images/prints/5_480.PNG 480, assets/images/prints/5_1516.PNG 1516"
+                        data-src="assets/images/prints/5_1516.PNG" 
+                        data-sub-html="<h4>Fechamento</h4><p>Resumo antes do fechamento de um período financeiro</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/5_375.PNG" alt="Thumb-5">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/6_375.PNG 375, assets/images/prints/6_480.PNG 480, assets/images/prints/6_1516.PNG 1516"
+                        data-src="assets/images/prints/6_1516.PNG" 
+                        data-sub-html="<h4>Movimentos do Período</h4><p>Listagem de movimentos financeiros do período</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/6_375.PNG" alt="Thumb-6">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/7_375.PNG 375, assets/images/prints/7_480.PNG 480, assets/images/prints/7_1516.PNG 1516"
+                        data-src="assets/images/prints/7_1516.PNG" 
+                        data-sub-html="<h4>Saldos</h4><p>Listagem do detalhamento de saldo de uma conta bancária (carteira)</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/7_375.PNG" alt="Thumb-7">
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-3" 
+                        data-responsive="assets/images/prints/8_375.PNG 375, assets/images/prints/8_480.PNG 480, assets/images/prints/8_1516.PNG 1516"
+                        data-src="assets/images/prints/8_1516.PNG" 
+                        data-sub-html="<h4>Grupos de Acesso</h4><p>Cadastro de grupos de acesso com listagem de permissões</p>">
+                        <a href="">
+                            <img class="img-responsive" src="assets/images/prints/8_375.PNG" alt="Thumb-8">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
     
@@ -189,8 +282,8 @@
                     <ul>
                         <li><a href="#" target="_blank">Manual do usuário</a></li>
                         <li><a href="#" target="_blank">Manual do desenvolvedor</a></li>
-                        <li><a href="https://github.com/arthurgregorio/web-budget-docker" target="_blank">Utilizar o container docker</a></li>                    
-                        <li><a href="#" target="_blank">Instalar o sistema em um servidor local</a></li>
+                        <li><a href="https://github.com/arthurgregorio/web-budget-docker" target="_blank">Utilizar o sistema no docker</a></li>                    
+                        <li><a href="#" target="_blank">Utilizar o sistema em um servidor local</a></li>
                     </ul>
                 </p>
             </div>
@@ -238,7 +331,9 @@
                     <div class="speech-bubble">
                         <h3 class="sub-title">Olá,</h3>
                         <p>
-                            Quer conhecer um pouco mais sobre o meu trabalho? Manter contato ou falar sobre algum dos meus projetos? Me siga nas redes sociais clicando nos botões abaixo!
+                            Quer conhecer um pouco mais sobre o meu trabalho? Manter contato? Falar sobre algum projeto? Me contratar? 
+                            Me siga nas redes sociais clicando nos botões abaixo ou fique a vontade para me enviar um e-mail em 
+                            <a href="mailto:contato@arthurgregorio.eti.br">contato@arthurgregorio.eti.br</a>
                         </p>                         
                         <div class="source">
                             <span class="name"><a href="https://twitter.com/gregorioarthur" target="_blank">Arthur Gregório</a></span>
@@ -276,6 +371,15 @@
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
     <script type="text/javascript" src="assets/js/main.js"></script>  
+
+    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-fullscreen.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-thumbnail.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-zoom.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
+
+    <script>
+        lightGallery(document.getElementById('lightgallery'));
+    </script>
 </body>
 </html> 
 
