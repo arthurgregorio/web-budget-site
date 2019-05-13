@@ -8,6 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Conheça o webBudget. Um sistema de controle financeiro grátis e de código aberto!">
     <meta name="author" content="Arthur Gregório">    
+    
+    <meta property="og:site_name" content="webBudget"/>
+    <meta property="og:title" content="Conheça o webBudget! Um sistema para controle financeiro grátis e de código aberto!"/>
+    <meta property="og:description" content="O webBudget é um sistema grátis e de código aberto para controle financeiro pessoal ou de pequenas empresas"/>
+    <meta property="og:image" content="assets/images/wb-logo-short.png">
+    <meta property="og:url" content="https://webbudget.com.br/">
+    <meta property="og:type" content="website"/>
+    
     <link rel="shortcut icon" href="favicon.ico">  
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
@@ -23,7 +31,6 @@
     <link rel="stylesheet" href="assets/css/custom.css">
     
     <!-- lightgallery -->
-    <link rel="stylesheet" href="assets/plugins/lightgallery/css/lg-transitions.min.css">
     <link rel="stylesheet" href="assets/plugins/lightgallery/css/lightgallery.min.css">
     <link rel="stylesheet" href="assets/plugins/lightgallery/css/demo-gallery.css">
    
@@ -371,15 +378,26 @@
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
     <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
     <script type="text/javascript" src="assets/js/main.js"></script>  
-
-    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-fullscreen.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-thumbnail.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/lightgallery/js/lg-zoom.min.js"></script>
-    <script type="text/javascript" src="assets/plugins/lightgallery/js/lightgallery.min.js"></script>
+    
+    <script type="text/javascript" src="assets/plugins/lightgallery/js/lightgallery-all.min.js"></script>     
 
     <script>
-        lightGallery(document.getElementById('lightgallery'));
-    </script>
+        var $lg = $('#lightgallery');
+ 
+        $lg.lightGallery({
+            thumbnail:true,
+            animateThumb: false,
+            showThumbByDefault: false
+        });
+                
+        $lg.on('onBeforeOpen.lg',function(event){
+            $('.header.navbar-fixed-top').css('z-index', '1')
+        });
+
+        $lg.on('onBeforeClose.lg',function(event){
+            $('.header.navbar-fixed-top').css('z-index', '9999')
+        });
+        </script>
 </body>
 </html> 
 
